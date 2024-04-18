@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#sidebar {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: slategray;
+}
+#logo{
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+#logo>img:hover{
+    height: 180px;
+    width: 180px;
+}
+#logo:hover{
+    color: antiquewhite;
+}
+.tag-1{
+    box-shadow: 5px 5px 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.tag-1:hover{
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(43, 34, 106);
+    color: antiquewhite;
+}
+.name{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+#sales{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.number{
+    margin-left: 15px;
+}
+#sidebar>button {
+    margin-top: 5px;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    padding: 5px;
+    font-size: 18px;
+    background-color: slategray;
+}
+
+#sidebar>button {
+    display: flex;
+    gap: 10px;
+}
+#sidebar>button:hover{
+    background-color: rgb(43, 34, 106);
+    color: antiquewhite;
+}
+
+/*  */
+
+#content {
+    width: 80%;
+    background-color: rgb(237, 230, 230);
+}
+/* #nav-1{
+    position: fixed;
+} */
+
+#nav {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 80%;
+}
+
+
+#hember {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.dropbtn {
+    /* background-color: #453da5; */
+    /* color: white; */
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #948fce;
+}
+
+/*  */
+
+/* Dashboard */
+
+#dashboard{
+    margin-top: 50px;
+    height: 90vh;
+    overflow: scroll;
+}
+
+#dash{
+    display: flex;
+    justify-content: center;
+}
+
+#dash-1{
+    width: 30%;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 16px;
+}
+#dash-main{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.view{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#dash-3>p{
+    margin: 10px;
+}
+#dash-2{
+    display: flex;
+    align-items: center;
+}
+.foter{
+    margin: 10px;
+    text-align: center;
+}
+#dash-chart{
+    display: flex;
+    justify-content: space-between;
+}
+
+#corner{
+    height: 500px;
+    width: 500px;
+}
+#corner-1{
+    height: 500px;
+    width: 500px;
+}
+
+#tables{
+    display: flex;
+    justify-content: space-between;
+}
+#table-1{
+    border: 1px solid black;
+    width: 45%;
+}
+#table-2{
+    border: 1px solid black;
+    width: 45%;
+}
+#managment-1{
+    display: flex;
+    justify-content: space-between;
+}
+#managment{
+    width: 50%;
+    border: 1px solid black;
+}
+#record{
+    margin-left: 5px;
+}
+.data-1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+#team{
+    width: 40%;
+    border: 1px solid black;
+}
+.inbox{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+/* dashboard over */
+
+/* chart */
+
+#chart{
+    height: 90vh;
+    margin-top: 50px;
+    overflow: scroll;
+}
+#achart{
+    display: flex;
+    justify-content: space-around;
+}
+
+#chart-1{
+    height: 500px;
+    width: 500px;
+}
+#chart-2{
+    height: 500px;
+    width: 500px;
+}
+#chart-3{
+    margin-left: 20px;
+}
+#chart-4{
+    margin-left: 20px;
+}
+
+/* chart over */
+
+/* table */
+#table{
+    margin-top: 50px;
+    height: 90vh;
+    overflow: scroll;
+}
+table{
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: separate;
+}
+tr,td{
+    border: none;
+    padding: 5px;
+}
+#table-strip{
+    border-collapse: collapse;
+}
+#table-strip>td,tr{
+    border: 1px solid black;
+    padding: 5px;
+}
+#table-borde{
+    border: 1px solid black;
+}
+/* table over */
+
+/* form */
+#form{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: url(./formb.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: scroll;
+}
+form{
+    width: 350px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    background: transparent;
+}
+#log-in{
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+input{
+    margin: 5px;
+}
+
+
+/* form over */
+
+/* calender */
+
+#calender{
+    margin-top: 50px;
+    overflow: scroll;
+}
+#calendar-1{
+    margin: 10px;
+}
+/* calender over */
+
+/* user */
+
+#user{
+    margin-top: 50px;
+    height: 90vh;
+    overflow: scroll;
+}
+#user-tab{
+    margin: 10px;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 15px 15px 10px gray;
+}
+
+/* user over */
+
+/* blog */
+
+#blog{
+    margin-top: 50px;
+    height: 90vh;
+    overflow: scroll;
+}
+#blog-img{
+    display: flex;
+    justify-content: space-around;
+}
+#blog-img-1{
+    margin-top: 10px;
+    height: 400px;
+    width: 400px;
+    box-shadow: 10px 10px 5px black;
+}
+#blog-img-2{
+    margin-top: 10px;
+    height: 400px;
+    width: 400px;
+    box-shadow: 10px 10px 5px black;
+}
+/* blog over */

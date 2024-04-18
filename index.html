@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/calendar.js.css">
+    <title>Admin Pannel</title>
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="sidebar">
+            <div id="logo">
+                <img src="./logobgr.png" height="100%" width="100%">
+                <p class="name">Bhavini Patel</p>
+            </div>
+            <div id="sales">
+                <div class="tag-1">
+                    <p> <i class="fa-solid fa-tag"></i> Sales</p>
+                    <p class="number">20</p>
+                </div>
+                <div class="tag-1">
+                    <p> <i class="fa-solid fa-bag-shopping"></i> Orders</p>
+                    <p class="number">40</p>
+                </div>
+            </div>
+            <button id="dashboardBtn" for="#dashboard"><i class="fa-solid fa-house-chimney"></i>DashBoard</button>
+            <button id="userBtn" for="#user"><i class="fa-solid fa-user"></i>Users</button>
+            <button id="formBtn" for="#form"><i class="fa-regular fa-rectangle-list"></i>Form</button>
+            <button id="chartBtn" for="#chart"><i class="fa-solid fa-chart-simple"></i>Chart</button>
+            <button id="iconsBtn" for="#icons"><i class="fa-solid fa-icons"></i>Icons</button>
+            <button id="tableBtn" for="#table"><i class="fa-solid fa-table"></i>Table</button>
+            <button id="calenderBtn" for="#calender"><i class="fa-regular fa-calendar-days"></i>Calender</button>
+            <button id="settingBtn" for="#setting"><i class="fa-solid fa-gear"></i>Setting</button>
+            <button id="settingBtn" for="#blog"><i class="fa-brands fa-blogger"></i>Blog</button>
+        </div>
+
+        <!-- Content -->
+
+        <div id="content">
+
+            <div id="nav">
+                <div id="hember">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- Hember over -->
+
+                <div id="links">
+                    <i class="fa-regular fa-file-lines" id="login-1"></i>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa-solid fa-link"></i> Quick Links <i
+                                class="fa-solid fa-caret-down"></i> </button>
+                        <div class="dropdown-content">
+                            <a href="#"> <i class="fa-regular fa-list"></i> Acces Log</a>
+                            <a href="#"> <i class="fa-solid fa-database"></i> Back Ups</a>
+                            <a href="#"> <i class="fa-solid fa-cloud-arrow-down"></i> Updates</a>
+                            <a href="#"> <i class="fa-solid fa-user-tie"></i> Roles</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"> <i class="fa-solid fa-user"></i> Bhavini Patel <i
+                                class="fa-solid fa-caret-down"></i> </button>
+                        <div class="dropdown-content">
+                            <a href="#"> <i class="fa-solid fa-address-card"></i> Profile</a>
+                            <a href="#"> <i class="fa-solid fa-message"></i> Message</a>
+                            <a href="#"> <i class="fa-solid fa-gear"></i> Setting</a>
+                            <a href="#"> <i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Nav Over -->
+
+            <!-- Dashboard -->
+
+            <div id="dashboard">
+                <h1>Hello Dashboard</h1>
+                <div id="dash">
+                    <div id="dash-1">
+                        <div id="dash-main">
+                            <div id="dash-2">
+                                <p class="view"> <i class="fa-solid fa-eye"></i> </p>
+                            </div>
+                            <div id="dash-3">
+                                <p> Page View</p>
+                                <span class="count">10244</span>
+                                <span class="count">20483</span>
+                                <span class="count">40960</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="foter"> <i class="fa-solid fa-stopwatch"></i> In Last 24 Hrs </p>
+                    </div>
+
+                    <div id="dash-1">
+                        <div id="dash-main">
+                            <div id="dash-2">
+                                <p class="view"> <i class="fa-solid fa-money-bill"></i> </p>
+                            </div>
+                            <div id="dash-3">
+                                <p>Revenue</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="foter"> <i class="fa-solid fa-calendar"></i> In This Month </p>
+                    </div>
+
+                    <div id="dash-1">
+                        <div id="dash-main">
+                            <div id="dash-2">
+                                <p class="view"> <i class="fa-solid fa-envelope"></i> </p>
+                            </div>
+                            <div id="dash-3">
+                                <p>Support Request</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="foter"> <i class="fa-solid fa-envelope-open-text"></i> Active In The Last 7 Days </p>
+                    </div>
+
+                    <div id="dash-1">
+                        <div id="dash-main">
+                            <div id="dash-2">
+                                <p class="view"> <i class="fa-solid fa-cart-shopping"></i> </p>
+                            </div>
+                            <div id="dash-3">
+                                <p>New Orders</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="foter"> <i class="fa-solid fa-arrow-rotate-right"></i>Update Every 30 Mins </p>
+                    </div>
+
+                </div>
+
+                <div id="dash-chart">
+                    <div id="corner">
+                        <!-- <h1>Area Chart</h1> -->
+                    </div>
+                    <div id="corner-1"></div>
+                </div>
+
+                <div id="managment-1">
+                    <div id="managment">
+                        <div id="record">
+                            <h3>Data Managment</h3>
+                            <h2>1002</h2>
+                            <p>Externael Records</p>
+                        </div>
+
+                        <div id="data-managment">
+                            <div class="data-1">
+                                <p><i class="fa-brands fa-twitter"></i></p>
+                                <p>Twitter</p>
+                                <p>50Records</p>
+                                <p>25% <i class="fa-solid fa-caret-down"></i></p>
+                            </div>
+                            <div class="data-1">
+                                <p><i class="fa-brands fa-facebook"></i></p>
+                                <p>Facebook</p>
+                                <p>60Records</p>
+                                <p>35% <i class="fa-solid fa-caret-up"></i></p>
+                            </div>
+                            <div class="data-1">
+                                <p><i class="fa-brands fa-instagram"></i></p>
+                                <p>Instagram</p>
+                                <p>70Records</p>
+                                <p>10% <i class="fa-solid fa-caret-down"></i></p>
+                            </div>
+                            <div class="data-1">
+                                <p><i class="fa-solid fa-g"></i></p>
+                                <p>Google</p>
+                                <p>50Records</p>
+                                <p>15% <i class="fa-solid fa-caret-down"></i></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="team">
+                        <div class="data-1">
+                            <div class="inbox">
+                                <p><i class="fa-solid fa-envelope"></i>Inbox</p>
+                            </div>
+                            <p>250</p>
+                        </div>
+                        <div class="data-1">
+                            <div class="inbox">
+                                <p><i class="fa-solid fa-eye"></i>Profile Vision</p>
+                            </div>
+                            <p>50</p>
+                        </div>
+                        <div class="data-1">
+                            <div class="inbox">
+                                <p><i class="fa-solid fa-bookmark"></i>Bookmark</p>
+                            </div>
+                            <p>150</p>
+                        </div>
+                        <div class="data-1">
+                            <div class="inbox">
+                                <p><i class="fa-solid fa-phone"></i>Call</p>
+                            </div>
+                            <p>25</p>
+                        </div>
+                        <div class="data-1">
+                            <div class="inbox">
+                                <p><i class="fa-solid fa-message"></i>Message</p>
+                            </div>
+                            <p>30</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Dashboard Over -->
+
+            <!-- Chart -->
+
+            <div id="chart">
+                <div id="achart">
+                    <div id="chart-1"></div>
+                    <div id="chart-2"></div>
+                </div>
+                <div id="chart-3">
+                    <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+                </div>
+                <div id="chart-4">
+                    <div style="width: 800px;"><canvas id="acquisitions-1"></canvas></div>
+                </div>
+            </div>
+
+            <!-- Chart Over -->
+
+            <!-- table -->
+
+            <div id="table">
+                <div id="b-table">
+                    <h3>BASIC TABLE</h3>
+                    <p>Basic example without any additional modification classes</p>
+                    <table>
+                        <tr>
+                            <td>SR.No</td>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>User Name</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jcob</td>
+                            <td>Thoroton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>The Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Jerry</td>
+                            <td>Jellybean</td>
+                            <td>@bean</td>
+                        </tr>
+                    </table>
+
+                    <!-- table-2 -->
+
+                    <h3>Striped Row Table</h3>
+                    <p>Basic example without any additional modification classes</p>
+                    <table id="table-strip">
+                        <tr>
+                            <td>SR.No</td>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>User Name</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jcob</td>
+                            <td>Thoroton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>The Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Jerry</td>
+                            <td>Jellybean</td>
+                            <td>@bean</td>
+                        </tr>
+                    </table>
+
+                    <!-- table-3 -->
+
+                    <h3>Border Table</h3>
+                    <p>Basic example without any additional modification classes</p>
+                    <table id="table-borde">
+                        <tr>
+                            <td>SR.No</td>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>User Name</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jcob</td>
+                            <td>Thoroton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>The Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Jerry</td>
+                            <td>Jellybean</td>
+                            <td>@bean</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <!-- table over -->
+
+            <!-- form -->
+
+            <div id="form">
+                <div id="f-header">
+                    <form>
+                        <div class="cont">
+                            <input id="input" type="text" required>
+                            <label for="input">User Name</label>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="cont">
+                            <input id="password" type="password" required>
+                            <label for="password">Enter Password</label>
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="rem-box">
+                            <div class="remmember">
+                                <input type="checkbox">
+                                Remember Me
+                            </div>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <input type="submit" value="Log In" id="log-in" />
+                        <div class="new">
+                            Do not Have Account?
+                            <a href="#">sign Up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- form over -->
+
+            <!-- celender -->
+
+            <div id="calender">
+                <div id="calendar-1" style="height: 400px; width: 400px;"></div>
+            </div>
+
+            <!-- celender over -->
+
+            <!-- user -->
+
+            <div id="user">
+                <h3>Users</h3>
+            <table id="user-tab">
+                <tr>
+                    <td>SR.No</td>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>User Name</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jcob</td>
+                    <td>Thoroton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry</td>
+                    <td>The Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Jerry</td>
+                    <td>Jellybean</td>
+                    <td>@bean</td>
+                </tr>
+            </table>
+
+        </div>
+
+            <!-- user Over -->
+
+            <!-- blog -->
+
+            <div id="blog">
+                <div id="blog-img">
+                    <div id="blog-img-1">
+                        <img src="./blog1.jpg" height="100%" width="100%">
+                    </div>
+                    <div id="blog-img-2">
+                        <img src="./blog2.avif" height="100%" width="100%">
+                    </div>
+                </div>
+            </div>
+
+            <!-- blog over -->
+
+            <!-- pop-up form -->
+
+            <!-- pop-up form over  -->
+
+        </div>
+
+    </div>
+
+
+    <!-- Script files -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"
+        integrity="sha512-CQBWl4fJHWbryGE+Pc7UAxWMUMNMWzWxF4SQo9CgkJIN1kx6djDQZjh3Y8SZ1d+6I+1zze6Z7kHXO7q3UyZAWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="./dist/apexcharts.js"></script>
+    <script src="./dist/calendar.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
