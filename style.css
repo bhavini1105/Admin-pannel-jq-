@@ -381,3 +381,23 @@ input{
     box-shadow: 10px 10px 5px black;
 }
 /* blog over */
+
+/* pop-up form */
+
+#mod{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    display: flex;
+}
+#modal-1{
+    position: absolute;
+    background-color: #948fce;
+    filter: blur(5px);
+}
+#modal-2{
+    position: absolute;
+    z-index: 2;
+}
+
+/* pop-up form over */

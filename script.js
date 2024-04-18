@@ -26,6 +26,13 @@ $("#hember").on("click",function(){
   sideCustomization();
 })
 
+// pop-up form
+
+
+$("#log-form").on("click",function(){
+  console.log("hello")
+    $("#mod").toggle()
+})
 
 // Appax chart
 
