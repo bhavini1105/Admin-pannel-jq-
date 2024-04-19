@@ -1,15 +1,45 @@
-var visible = false;
 
+// 
+var visible = false;
 function sideCustomization() {
   visible = !visible;
-  $("#sidebar").toggle(50, function () {
-    if (visible) {
-      $("#content,#content>div,#nav").css("width", "100%");
-    } else {
-      $("#content,#content>div,#nav").css("width", "80%");
-    }
-  });
+
+  if (visible) {
+    $("#content,#nav").css("width", "100%");
+    $("#module").css({
+      left: "0px",
+      top: "55px",
+      width: "100%",
+      height: "95vh",
+      position: "fixed",
+    });
+    $(".lg").css({ left: "40%", top: "40%" });
+  }
+   else {
+    $("#content,#nav").css("width", "80%");
+    $("#module").css({
+      left: "151px",
+      top: "55px",
+      width: "80%",
+      height: "90vh",
+    });
+    $(".lg").css({ left: "47%", top: "30%" });
+   }
 }
+
+// 
+// var visible = false;
+
+// function sideCustomization() {
+//   visible = !visible;
+//   $("#sidebar").toggle(50, function () {
+//     if (visible) {
+//       $("#content,#content>div,#nav").css("width", "100%");
+//     } else {
+//       $("#content,#content>div,#nav").css("width", "80%");
+//     }
+//   });
+// }
 
 $("#content>div").hide()
 $("#nav").show()
@@ -22,17 +52,71 @@ $("#sidebar>button").on("click",function(){
     // $("#modal").hide()
 })
 
+// $("#hember").on("click",function(){
+//   sideCustomization();
+// })
+
+// hember1
+
 $("#hember").on("click",function(){
-  sideCustomization();
+  $("#sidebar").toggle(10);
+ sideCustomization();
 })
 
+// extra
+
+$("#register").hide()
+
+$(".toggle-btn1").on("click",function(){
+  $("#register").toggle("1",function(){
+      $("#login").hide()
+      $("#register").css("left","50px")
+      $("span").css("Buttom","150px")
+      // $(".toggle-btn1").css("backgroundColor"," lightcoral")
+      $(".toggle-btn1").css("borderRadius"," 30px")
+  })
+})
+
+$(".toggle-btn").on("click",function(){
+  $("#login").toggle("1",function(){
+      $("#register").hide()
+      $("#login").css("left","50px")
+      // $(".toggle-btn").css("backgroundColor"," lightcoral")
+      $(".toggle-btn").css("borderRadius"," 30px")
+  })
+})
+
+// extra
 // pop-up form
 
 
 $("#log-form").on("click",function(){
   console.log("hello")
-    $("#mod").toggle()
+    $("#module").toggle()
 })
+
+// Counter
+
+$(".count").each(function () {
+  $(this)
+    .prop("Counter", 0)
+    .animate(
+      {
+        Counter: $(this).text(),
+      },
+      {
+        duration: 4000,
+        easing:"swing",
+        step:function (now) {
+          now = Number(Math.ceil(now)).toLocaleString('en');
+          $(this).text(now);
+        },
+      }
+    );
+});
+
+
+// 
 
 // Appax chart
 

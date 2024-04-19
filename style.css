@@ -94,6 +94,8 @@ body {
     justify-content: space-between;
     position: fixed;
     width: 80%;
+    z-index: 40;
+    
 }
 
 
@@ -300,21 +302,21 @@ tr,td{
     align-items: center;
     justify-content: center;
     height: 90vh;
-    background: url(./formb.jpg);
-    background-position: center;
-    background-size: cover;
     overflow: scroll;
+    background-color: rgb(202, 217, 228);
 }
 form{
-    width: 350px;
+    width: 550px;
+    height: 300px; 
     padding: 20px;
     border-radius: 30px;
     border: 2px solid black;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(10px);
-    background: transparent;
+    background-color:  rgb(237, 230, 230);
 }
+.s-form{
+    margin: 10px;
+}
+
 #log-in{
     padding: 5px;
     margin: 10px;
@@ -384,20 +386,185 @@ input{
 
 /* pop-up form */
 
-#mod{
+/* .lg {
+  border: 2px solid rgba(14, 14, 14, 0.807);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  font-style: italic;
+  font-weight: 200;
+  gap: 10px;
+  margin-top: 150px;
+  border-radius: 5%;  
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.479), 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+
+
+}
+
+.btn {
+  text-align: center;
+  margin: auto;
+  border-radius: 800px;
+  color: solid black;
+  width: 200px;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: none;
+  color: #000;
+}
+
+.inp {
+  width: 150px;
+  height: 25px;
+  margin: 0px 75px;
+  font-weight: 200;
+  border-radius: 5px;
+}
+
+.inp:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+input[type="password"] {-webkit-text-security: disc !important;} 
+
+.inline {
+  justify-content: center;
+  display: flex;
+  gap: 70px;
+}
+
+.k {
+  font-weight: 500px;
+  gap: 5%;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.k label input {
+  color: #000;
+  text-decoration: none;
+}*/
+
+#module {
+    width: 85%;
+    height: 80vh;
     position: absolute;
-    height: 400px;
-    width: 400px;
+    top: 10%;
+    left: 21%;
     display: flex;
+    justify-content: center;
+    backdrop-filter: blur(12px);
+    z-index: 25;
+} 
+
+.lg{
+    height: 480px;
+    width: 380px;
+    position: relative;
+    margin:6% auto;
+    background-color: white;
+    padding: 5px;
 }
-#modal-1{
-    position: absolute;
-    background-color: #948fce;
-    filter: blur(5px);
+#login{
+    left: 50px;
 }
-#modal-2{
+#register{
+    left: 450px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px gray;
+    border-radius: 30px;
+    /* overflow: hidden; */
+}
+.toggle-btn{
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+.toggle-btn1{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+/* #btn{
+    top: 0;
+    left: 0;
     position: absolute;
-    z-index: 2;
+    width: 110px;
+    height: 100%;
+    border-radius: 30px;
+    transition: .5s;
+} */
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons>i{
+    margin: 0 12px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.input-group{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    height: 300px;
+    transition: .5s;
+}
+.input-feild{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom:1px solid black;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    margin-top: 50px;
+    cursor: pointer;
+    display: block;
+    margin-top: 50px;
+    margin-left: 20px;
+    background:  lightcoral;
+    border: 0;
+    border-radius: 30px;
+}
+/* .check-box{
+    margin: 0px 10px 20px 0;
+} */
+span{
+    color: rgb(39, 35, 30);
+    font-size: 12px;
+    bottom: 130px;
 }
 
 /* pop-up form over */
