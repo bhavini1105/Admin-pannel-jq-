@@ -219,6 +219,7 @@ body {
 #managment{
     width: 50%;
     border: 1px solid black;
+    margin-bottom: 10px;
 }
 #record{
     margin-left: 5px;
@@ -328,6 +329,11 @@ input{
     margin: 5px;
 }
 
+h1{
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 /* form over */
 
@@ -335,6 +341,7 @@ input{
 
 #calender{
     margin-top: 50px;
+    height: 90vh;
     overflow: scroll;
 }
 #calendar-1{
@@ -366,7 +373,39 @@ input{
     height: 90vh;
     overflow: scroll;
 }
-#blog-img{
+.about-txt{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-content{
+    width: 50%;
+    display: flex;
+}
+.aboutmeweb{
+    width: 50%;
+    height: 400px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px 4px gray;
+    margin: 40px;
+    background-color: rgb(169, 208, 242);
+}
+.aboutmeweb:hover{
+    box-shadow: 4px 4px 4px 4px rgb(27, 27, 27);
+}
+.show-btn{
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 12px;
+    background-color:  rgb(169, 208, 242);
+}
+.show-btn:hover{
+    background-color:  rgb(26, 50, 71);
+    color: antiquewhite;
+}
+/* #blog-img{
     display: flex;
     justify-content: space-around;
 }
@@ -381,7 +420,7 @@ input{
     height: 400px;
     width: 400px;
     box-shadow: 10px 10px 5px black;
-}
+} */
 /* blog over */
 
 /* pop-up form */
@@ -568,3 +607,42 @@ span{
 }
 
 /* pop-up form over */
+
+/* Icons */
+#icons{
+    margin-top: 50px;
+    height: 90vh;
+    overflow: scroll;
+}
+#icon-type{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.itext{
+    text-align: center;
+}
+
+.aboutme-web{
+    width: 70%;
+    /* border: 2px solid yellow; */
+    box-shadow: 4px 4px 4px 4px gray;
+    margin: 20px;
+    background-color: rgb(169, 208, 242);
+}
+.aboutme-web:hover{
+    width: 70%;
+    box-shadow: 4px 6px 4px 4px rgb(26, 26, 26);
+}
+h3{
+    margin: 10px;
+    text-align: center;
+}
+/* Icons over */
+/* setting */
+#setting{
+    height: 90vh;
+    overflow: scroll;
+    margin-top: 50px;
+}
+
+/* setting over */

@@ -13,7 +13,7 @@ function sideCustomization() {
       height: "95vh",
       position: "fixed",
     });
-    $(".lg").css({ left: "40%", top: "40%" });
+    $(".lg").css({ left: "5%", top: "5%" });
   }
    else {
     $("#content,#nav").css("width", "80%");
